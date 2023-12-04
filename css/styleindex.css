@@ -1,0 +1,141 @@
+.p0 {
+  padding: 0;
+}
+img {
+  object-fit: cover;
+}
+.logo {
+  padding: 16px 0;
+}
+.logo img {
+  height: 100px;
+}
+.menu .flex-center {
+  display: flex;
+  justify-content: center;
+}
+.full-bgc {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+.title {
+  color: #0ec0c4;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 32px 0px;
+}
+
+.content-center {
+  display: flex;
+  justify-content: space-between;
+}
+.content-center img {
+  width: 100%;
+}
+.content-center p {
+  text-align: justify;
+  font-size: 16px;
+}
+.content-about .title {
+  margin-top: -12px;
+  margin-bottom: 0;
+}
+
+/* container - img  */
+.images .images-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container-img {
+  position: relative;
+}
+.images .images-right .container-img {
+  width: calc(50% - 20px);
+}
+.images .container-img:hover {
+  transform: scale(1.05);
+  transition: all ease 1s;
+}
+.images .images-left,
+.images .images-right {
+  height: 500px;
+}
+.container-img .content-img {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  color: white;
+}
+.images-left .content-img {
+  left: 24px;
+}
+.container-img img {
+  width: 100%;
+  height: 100%;
+}
+/* affordable */
+.affordable img {
+  width: 100%;
+  height: 300px;
+}
+.affordable .sub-title {
+  margin-top: 0px;
+  color: orange;
+  font-size: 18px;
+  text-align: center;
+}
+.affordable p {
+  font-size: 16px;
+}
+.footer {
+  margin-top: 32px;
+  background-color: #0ec0c4;
+  padding: 16px 0px;
+}
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 16px;
+}
+.footer-center h5,
+p {
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .menu .flex-center {
+    display: block;
+  }
+  .content-center {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .images .images-left {
+    height: 250px;
+  }
+  .images .images-right {
+    margin-top: 24px;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .images .container-img img {
+    height: 250px;
+  }
+  .images .images-right .container-img {
+    width: 100%;
+  }
+  .affordable .sub-title {
+    margin-top: 12px;
+  }
+  .p0-xs {
+    padding: 0px;
+  }
+  .mt-12-xs {
+    margin-top: 12px;
+  }
+}
